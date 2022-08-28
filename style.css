@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("pic/stacey-gabrielle-koenitz-rozells-kSY5T6js2KE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+   width: 40rem;
+   height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #222d;
+    margin-top: 7em;
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    position: relative;
+    bottom: 5rem;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.search-bar{
+    height: 2rem;
+    width: 20rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    outline: none; 
+}
+button{
+    margin: 1.5em;
+    padding: 5px;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+button i{
+    margin-right: 5px;
+}
+button:hover{
+    transform: scaleY(1.1) scaleX(1.1) translateY(-0.3rem);
+    transition: 0.3s;
+}
+.weather{
+    margin: 1rem 6rem;
+    
+}
+.temp{
+    font-size: 30px;
+}
+.wind{
+    margin-bottom: 3rem;
+}.loading{
+    visibility: hidden;
+}
+@media (max-width: 670px) {
+    .card{
+        width: 20rem;
+    }
+    .search-bar{
+        width: 17rem;
+    }
+}
