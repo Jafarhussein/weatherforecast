@@ -1,9 +1,11 @@
 *{
+    /*mina element ska ha 0 margin och padding*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    /*jag vill att hela body ska ha en flex display och column direction, samt ha bakgrund på kroppen istället för en img tag så att hela kroppen har denna bakgrund*/
     height: 100vh;
     width: 100%;
     background-image: url("pic/stacey-gabrielle-koenitz-rozells-kSY5T6js2KE-unsplash.jpg");
@@ -14,7 +16,9 @@ body{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
 }
+/*valde display flex eftersom jag tycker inte att en grid behövs för just denna projekt, jag vill att allt ska vara på varandra*/
 .card{
+    /*har display av flex och direction av column så att content ine i den är på varandra*/
    width: 40rem;
    height: 30rem;
     display: flex;
@@ -30,6 +34,7 @@ body{
 }
 
 .search{
+    /*formen ska vara på vrandra och inte bredvid*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +61,7 @@ button{
     cursor: pointer;
     outline: none;
 }
+/*jag vill ha en mellanrum mellan texten och icon på min knapp*/
 button i{
     margin-right: 5px;
 }
@@ -72,6 +78,7 @@ button:hover{
 }
 .wind{
     margin-bottom: 3rem;
+    /*vill ha beskrivning ska var gömd innan användaren söker efter en stad*/
 }.loading{
     visibility: hidden;
 }
