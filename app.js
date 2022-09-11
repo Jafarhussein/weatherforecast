@@ -1,8 +1,9 @@
 let weather ={
   "apiKey": "4ed1d0be5834872b22ec378f2caa98c6",// sparar min api nyckel in i objekten
+  //skapar en function med city som parameter så att den sparar användarens input
   fetchWeather: function(city){
-    //skriver in url för api sedan konverterar till metric så att den blir till celsius
-      fetch("https://api.openweathermap.org/data/2.5/weather?q="+city +"&appid="+ this.apiKey+"&units=metric")  //hämtar api url sedan skriver in min apikey   
+    //denna kod tar användarens input och min apikey för att skicka till url och får tillbaka information om staden
+      fetch("https://api.openweathermap.org/data/2.5/weather?q="+city +"&appid="+ this.apiKey+"&units=metric") 
       .then((response)=> response.json())//när den har hämtat url då ger den en response till JSON
       .then((data)=> this.displayWeather(data))// för att skriva ut datan till skärmen
   },
