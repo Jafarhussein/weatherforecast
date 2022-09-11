@@ -10,13 +10,18 @@
     <title>Weather</title>
 </head>
 <body> 
+    <!--skapar div med klass av card-->
     <div class="card">
+    <!--skapar div för min search bar-->
     <div class="search">
         <input type="search" class="search-bar" placeholder="City">
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Submit</button>
+        <!--valde att läga en icon på min search button -->
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
     </div>
+        <!--jag la en parent div med klass of loading så att innan man söker på en stad så är den gömd sedan kommer den ut efter man har sökt, det kommer jag fixa i css-->
     <div class="weather loading">
     <div class="weather">
+        <!--dessa divs kommer hålla vår information om en stad-->
         <h1 class="city">City</h1>
         <div class="temp">0°C</div>
         <img src="" alt="" class="icon">
