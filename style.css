@@ -32,7 +32,13 @@ body{
     position: relative;
     bottom: 5rem;
 }
-
+#title{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 .search{
     /*formen ska vara på vrandra och inte bredvid*/
     display: flex;
@@ -59,7 +65,7 @@ button{
     border: none;
     font-weight: bold;
     cursor: pointer;
-    outline: none;
+    font-size: 15px;
 }
 /*jag vill ha en mellanrum mellan texten och icon på min knapp*/
 button i{
